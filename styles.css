@@ -1,0 +1,277 @@
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --surface-alt: #eef3ff;
+  --text: #1e293b;
+  --muted: #5b6472;
+  --border: #d8e0ee;
+  --accent: #335cff;
+  --accent-soft: #dfe7ff;
+  --success: #0f9f62;
+  --success-soft: #dff6ea;
+  --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  --radius: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #eef3ff 0%, var(--bg) 220px);
+  color: var(--text);
+}
+
+.wrap {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.site-header {
+  padding: 2.5rem 0 1.5rem;
+}
+
+.eyebrow,
+.week-label,
+.day-name,
+.task-detail {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+}
+
+.eyebrow,
+.week-label,
+.day-name {
+  color: var(--accent);
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+}
+
+.intro {
+  max-width: 60rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 1rem 0 0;
+}
+
+.header-actions {
+  margin-top: 1rem;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+  margin: 0 0 1.5rem;
+}
+
+.summary-card,
+.week-card,
+.day-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.summary-card {
+  padding: 1.25rem;
+}
+
+.summary-card h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.summary-card p {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+}
+
+.summary-card .big-number {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-top: 0.75rem;
+}
+
+.plan-container {
+  display: grid;
+  gap: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.week-card {
+  padding: 1.25rem;
+}
+
+.week-header {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.week-header h2,
+.day-header h3,
+.task-copy h4 {
+  margin: 0;
+}
+
+.week-goal,
+.week-notes,
+.day-focus,
+.task-description,
+.task-detail {
+  color: var(--muted);
+}
+
+.week-goal,
+.day-focus,
+.task-description,
+.task-detail,
+.week-notes {
+  line-height: 1.5;
+}
+
+.week-progress-block {
+  min-width: 220px;
+}
+
+.progress-meta {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.progress-bar {
+  height: 12px;
+  background: var(--surface-alt);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--accent), #6d88ff);
+  border-radius: inherit;
+  transition: width 0.2s ease;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.day-card {
+  padding: 1rem;
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.day-focus {
+  margin: 0;
+  font-size: 0.92rem;
+  text-align: right;
+}
+
+.task-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.task-row {
+  border: 1px solid var(--border);
+  background: #fbfcff;
+  border-radius: 16px;
+  padding: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.task-row.done {
+  border-color: #b9e8d0;
+  background: var(--success-soft);
+}
+
+.task-row.done .task-copy h4 {
+  color: var(--success);
+}
+
+.task-description,
+.task-detail {
+  margin: 0.35rem 0 0;
+}
+
+.done-button,
+.secondary-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.8rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease, background 0.15s ease;
+}
+
+.done-button {
+  min-width: 98px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.done-button:hover,
+.secondary-button:hover {
+  transform: translateY(-1px);
+}
+
+.done-button.is-done {
+  background: var(--success);
+  color: #fff;
+}
+
+.secondary-button {
+  background: #111827;
+  color: #fff;
+}
+
+@media (max-width: 720px) {
+  .week-header,
+  .day-header,
+  .task-row {
+    flex-direction: column;
+  }
+
+  .week-progress-block,
+  .day-focus,
+  .done-button {
+    width: 100%;
+  }
+
+  .day-focus {
+    text-align: left;
+  }
+}

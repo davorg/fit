@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4-Week Walking & Ab Roller Plan</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">4-week plan</p>
+      <h1>Walking &amp; Ab Roller Plan</h1>
+      <p class="intro">
+        A simple four-week plan with daily step goals, focused walking sessions and light ab roller work.
+        Tick things off as you do them. Your progress is stored locally in your browser.
+      </p>
+      <div class="header-actions">
+        <button id="reset-progress" class="secondary-button" type="button">Reset all progress</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="summary-grid" id="summary-grid" aria-label="Plan summary"></section>
+    <section id="plan-container" class="plan-container" aria-live="polite"></section>
+  </main>
+
+  <template id="week-template">
+    <section class="week-card">
+      <div class="week-header">
+        <div>
+          <p class="week-label"></p>
+          <h2></h2>
+          <p class="week-goal"></p>
+        </div>
+        <div class="week-progress-block">
+          <div class="progress-meta"><span class="week-progress-text"></span></div>
+          <div class="progress-bar" aria-hidden="true"><span></span></div>
+        </div>
+      </div>
+      <div class="week-notes"></div>
+      <div class="days"></div>
+    </section>
+  </template>
+
+  <template id="day-template">
+    <article class="day-card">
+      <div class="day-header">
+        <div>
+          <p class="day-name"></p>
+          <h3></h3>
+        </div>
+        <p class="day-focus"></p>
+      </div>
+      <div class="task-list"></div>
+    </article>
+  </template>
+
+  <template id="task-template">
+    <div class="task-row">
+      <div class="task-copy">
+        <h4></h4>
+        <p class="task-description"></p>
+        <p class="task-detail"></p>
+      </div>
+      <button class="done-button" type="button" aria-pressed="false">Done it</button>
+    </div>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
