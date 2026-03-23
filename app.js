@@ -1,6 +1,110 @@
 const PLAN_URL = 'plan.json';
 const STORAGE_KEY = 'walking-roller-plan-progress-v1';
 
+// Supabase client – initialised in initSupabase() when credentials are present
+let _supabase = null;
+let currentUser = null;
+let currentPlan = null;
+
+function initSupabase() {
+  if (
+    typeof window.supabase !== 'undefined' &&
+    typeof SUPABASE_URL !== 'undefined' &&
+    SUPABASE_URL !== 'YOUR_SUPABASE_URL'
+  ) {
+    _supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  }
+}
+
+// ── Auth ──────────────────────────────────────────────────────────────────────
+
+async function signInWithGoogle() {
+  if (!_supabase) return;
+  await _supabase.auth.signInWithOAuth({
+    provider: 'google',
+    options: { redirectTo: window.location.href },
+  });
+}
+
+async function signOut() {
+  if (!_supabase) return;
+  await _supabase.auth.signOut();
+}
+
+function renderAuthUI(user) {
+  const loginBtn = document.getElementById('login-btn');
+  const logoutBtn = document.getElementById('logout-btn');
+  const userDisplay = document.getElementById('user-display');
+
+  if (user) {
+    loginBtn.hidden = true;
+    logoutBtn.hidden = false;
+    userDisplay.hidden = false;
+    userDisplay.textContent = user.user_metadata?.full_name || user.email || 'Signed in';
+  } else {
+    loginBtn.hidden = false;
+    logoutBtn.hidden = true;
+    userDisplay.hidden = true;
+  }
+}
+
+// ── Progress storage ──────────────────────────────────────────────────────────
+
+async function getProgress() {
+  if (currentUser && _supabase) {
+    const { data, error } = await _supabase
+      .from('progress')
+      .select('task_id')
+      .eq('user_id', currentUser.id)
+      .eq('completed', true);
+    if (!error && data) {
+      return Object.fromEntries(data.map((r) => [r.task_id, true]));
+    }
+  }
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+  } catch {
+    return {};
+  }
+}
+
+async function toggleTask(taskId) {
+  const progress = await getProgress();
+  const newValue = !progress[taskId];
+
+  if (currentUser && _supabase) {
+    const { error } = await _supabase.from('progress').upsert(
+      {
+        user_id: currentUser.id,
+        task_id: taskId,
+        completed: newValue,
+        completed_at: newValue ? new Date().toISOString() : null,
+      },
+      { onConflict: 'user_id,task_id' }
+    );
+    if (error) console.error('Error saving progress:', error);
+    return;
+  }
+
+  progress[taskId] = newValue;
+  if (!newValue) delete progress[taskId];
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+}
+
+async function resetProgress() {
+  if (currentUser && _supabase) {
+    const { error } = await _supabase
+      .from('progress')
+      .delete()
+      .eq('user_id', currentUser.id);
+    if (error) console.error('Error resetting progress:', error);
+    return;
+  }
+  localStorage.removeItem(STORAGE_KEY);
+}
+
+// ── Plan loading ──────────────────────────────────────────────────────────────
+
 async function loadPlan() {
   const response = await fetch(PLAN_URL, { cache: 'no-store' });
   if (!response.ok) {
@@ -9,17 +113,7 @@ async function loadPlan() {
   return response.json();
 }
 
-function getProgress() {
-  try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
-  } catch {
-    return {};
-  }
-}
-
-function saveProgress(progress) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
-}
+// ── Rendering ─────────────────────────────────────────────────────────────────
 
 function flattenTasks(plan) {
   return plan.weeks.flatMap((week) =>
@@ -112,11 +206,10 @@ function renderPlan(plan, progress) {
         button.dataset.taskId = task.id;
         updateTaskButton(taskNode, button, isDone);
 
-        button.addEventListener('click', () => {
-          const latestProgress = getProgress();
-          latestProgress[task.id] = !latestProgress[task.id];
-          saveProgress(latestProgress);
-          refresh(plan);
+        button.addEventListener('click', async () => {
+          button.disabled = true;
+          await toggleTask(task.id);
+          await refresh(plan);
         });
 
         if (isDone) weekDoneCount += 1;
@@ -142,25 +235,54 @@ function updateTaskButton(taskNode, button, isDone) {
   button.textContent = isDone ? 'Done ✓' : 'Done it';
 }
 
-function refresh(plan) {
-  const progress = getProgress();
+async function refresh(plan) {
+  const progress = await getProgress();
   renderSummary(plan, progress);
   renderPlan(plan, progress);
 }
 
 function setupReset(plan) {
-  document.getElementById('reset-progress').addEventListener('click', () => {
+  document.getElementById('reset-progress').addEventListener('click', async () => {
     const confirmed = window.confirm('Reset all saved progress for this plan?');
     if (!confirmed) return;
-    localStorage.removeItem(STORAGE_KEY);
-    refresh(plan);
+    await resetProgress();
+    await refresh(plan);
   });
 }
 
+// ── Init ──────────────────────────────────────────────────────────────────────
+
 async function init() {
+  initSupabase();
+
+  if (_supabase) {
+    // Re-render whenever the auth state changes (e.g. after OAuth redirect)
+    _supabase.auth.onAuthStateChange(async (_event, session) => {
+      currentUser = session?.user ?? null;
+      renderAuthUI(currentUser);
+      if (currentPlan) {
+        await refresh(currentPlan);
+      }
+    });
+
+    // Restore any existing session
+    const {
+      data: { session },
+    } = await _supabase.auth.getSession();
+    currentUser = session?.user ?? null;
+    renderAuthUI(currentUser);
+  } else {
+    // Supabase not configured – hide auth buttons
+    document.getElementById('login-btn').hidden = true;
+  }
+
+  document.getElementById('login-btn').addEventListener('click', signInWithGoogle);
+  document.getElementById('logout-btn').addEventListener('click', signOut);
+
   try {
     const plan = await loadPlan();
-    refresh(plan);
+    currentPlan = plan;
+    await refresh(plan);
     setupReset(plan);
   } catch (error) {
     document.getElementById('plan-container').innerHTML = `

@@ -66,6 +66,17 @@ h1 {
 
 .header-actions {
   margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.auth-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 .summary-grid {
@@ -235,6 +246,23 @@ h1 {
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.15s ease, opacity 0.15s ease, background 0.15s ease;
+}
+
+.auth-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.google-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.user-display {
+  font-weight: 600;
+  color: var(--text);
 }
 
 .done-button {
