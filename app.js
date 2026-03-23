@@ -208,8 +208,13 @@ function renderPlan(plan, progress) {
 
         button.addEventListener('click', async () => {
           button.disabled = true;
-          await toggleTask(task.id);
-          await refresh(plan);
+          try {
+            await toggleTask(task.id);
+            await refresh(plan);
+          } catch (err) {
+            console.error('Error toggling task:', err);
+            button.disabled = false;
+          }
         });
 
         if (isDone) weekDoneCount += 1;
@@ -271,13 +276,14 @@ async function init() {
     } = await _supabase.auth.getSession();
     currentUser = session?.user ?? null;
     renderAuthUI(currentUser);
-  } else {
-    // Supabase not configured – hide auth buttons
-    document.getElementById('login-btn').hidden = true;
-  }
 
-  document.getElementById('login-btn').addEventListener('click', signInWithGoogle);
-  document.getElementById('logout-btn').addEventListener('click', signOut);
+    document.getElementById('login-btn').addEventListener('click', signInWithGoogle);
+    document.getElementById('logout-btn').addEventListener('click', signOut);
+  } else {
+    // Supabase not configured – hide both auth buttons
+    document.getElementById('login-btn').hidden = true;
+    document.getElementById('logout-btn').hidden = true;
+  }
 
   try {
     const plan = await loadPlan();
