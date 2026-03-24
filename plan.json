@@ -1,21 +1,20 @@
 {
-  "planTitle": "4-week walking and ab roller plan",
+  "planTitle": "4-week walking plan",
   "weeks": [
     {
       "id": "week-1",
       "label": "Week 1",
       "title": "Turn the dial slightly",
-      "goal": "Move from 5,000 to about 6,000–6,500 steps a day, add a little brisk walking, and make first contact with the ab roller.",
+      "goal": "Move from 5,000 to about 6,000–6,500 steps a day, add a little brisk walking.",
       "notes": "Use the talk test throughout. Brisk means you can still talk, but you would not want to sing.",
       "days": [
         {
           "dayName": "Monday",
-          "title": "Focused walking + roller",
+          "title": "Focused walking",
           "focus": "Session day",
           "tasks": [
             {"id": "w1-mon-steps", "category": "walk", "title": "Hit 6,000+ steps", "description": "Reach at least 6,000 steps across the day.", "detail": "A gentle lift from your current baseline."},
-            {"id": "w1-mon-walk", "category": "walk", "title": "20–25 minute walk", "description": "Do 5 minutes easy, 10 minutes brisk, then 5–10 minutes easy.", "detail": "Steady, controlled effort."},
-            {"id": "w1-mon-roller", "category": "roller", "title": "Ab roller session", "description": "2–3 sets of 5–6 very small rollouts.", "detail": "Tiny range of motion. Keep your back flat."}
+            {"id": "w1-mon-walk", "category": "walk", "title": "20–25 minute walk", "description": "Do 5 minutes easy, 10 minutes brisk, then 5–10 minutes easy.", "detail": "Steady, controlled effort."}
           ]
         },
         {
@@ -37,11 +36,10 @@
         },
         {
           "dayName": "Thursday",
-          "title": "Baseline day + roller",
+          "title": "Baseline day",
           "focus": "Normal walking",
           "tasks": [
-            {"id": "w1-thu-steps", "category": "walk", "title": "Hit 6,000+ steps", "description": "Reach at least 6,000 steps across the day.", "detail": "Split it however you like."},
-            {"id": "w1-thu-roller", "category": "roller", "title": "Ab roller session", "description": "2–3 sets of 5–6 very small rollouts.", "detail": "Stop well before you lose control."}
+            {"id": "w1-thu-steps", "category": "walk", "title": "Hit 6,000+ steps", "description": "Reach at least 6,000 steps across the day.", "detail": "Split it however you like."}
           ]
         },
         {
@@ -54,12 +52,11 @@
         },
         {
           "dayName": "Saturday",
-          "title": "Focused walking + optional roller",
+          "title": "Focused walking",
           "focus": "Session day",
           "tasks": [
             {"id": "w1-sat-steps", "category": "walk", "title": "Hit 6,000+ steps", "description": "Reach at least 6,000 steps across the day.", "detail": "Try to do it outdoors if possible."},
-            {"id": "w1-sat-walk", "category": "walk", "title": "20–25 minute walk", "description": "Do 5 minutes easy, 10 minutes brisk, then 5–10 minutes easy.", "detail": "This is your third focused walk of the week."},
-            {"id": "w1-sat-roller", "category": "roller", "title": "Optional ab roller session", "description": "Only if you feel fresh: 2 sets of 5–6 small rollouts.", "detail": "Skip it if your core feels tired."}
+            {"id": "w1-sat-walk", "category": "walk", "title": "20–25 minute walk", "description": "Do 5 minutes easy, 10 minutes brisk, then 5–10 minutes easy.", "detail": "This is your third focused walk of the week."}
           ]
         },
         {
@@ -76,17 +73,16 @@
       "id": "week-2",
       "label": "Week 2",
       "title": "Build consistency",
-      "goal": "Work towards 6,500–7,000 steps a day, extend the brisk sections slightly, and get more comfortable with the roller.",
+      "goal": "Work towards 6,500–7,000 steps a day, extend the brisk sections slightly.",
       "notes": "Still controlled. The aim is consistency, not heroics.",
       "days": [
         {
           "dayName": "Monday",
-          "title": "Focused walking + roller",
+          "title": "Focused walking",
           "focus": "Session day",
           "tasks": [
             {"id": "w2-mon-steps", "category": "walk", "title": "Hit 7,000 steps", "description": "Aim for about 7,000 steps today.", "detail": "A little more volume, still manageable."},
-            {"id": "w2-mon-walk", "category": "walk", "title": "25–30 minute walk", "description": "Do 5 minutes easy, 12–15 minutes brisk, then 5–10 minutes easy.", "detail": "Build the middle section gently."},
-            {"id": "w2-mon-roller", "category": "roller", "title": "Ab roller session", "description": "3 sets of 6–8 controlled rollouts.", "detail": "A slightly longer reach is fine if form stays solid."}
+            {"id": "w2-mon-walk", "category": "walk", "title": "25–30 minute walk", "description": "Do 5 minutes easy, 12–15 minutes brisk, then 5–10 minutes easy.", "detail": "Build the middle section gently."}
           ]
         },
         {
@@ -108,11 +104,10 @@
         },
         {
           "dayName": "Thursday",
-          "title": "Baseline day + roller",
+          "title": "Baseline day",
           "focus": "Normal walking",
           "tasks": [
-            {"id": "w2-thu-steps", "category": "walk", "title": "Hit 7,000 steps", "description": "Aim for about 7,000 steps today.", "detail": "No special route needed."},
-            {"id": "w2-thu-roller", "category": "roller", "title": "Ab roller session", "description": "3 sets of 6–8 controlled rollouts.", "detail": "Keep every rep smooth."}
+            {"id": "w2-thu-steps", "category": "walk", "title": "Hit 7,000 steps", "description": "Aim for about 7,000 steps today.", "detail": "No special route needed."}
           ]
         },
         {
@@ -125,12 +120,11 @@
         },
         {
           "dayName": "Saturday",
-          "title": "Focused walking + optional roller",
+          "title": "Focused walking",
           "focus": "Session day",
           "tasks": [
             {"id": "w2-sat-steps", "category": "walk", "title": "Hit 7,000 steps", "description": "Aim for about 7,000 steps today.", "detail": "A good day for a longer route."},
-            {"id": "w2-sat-walk", "category": "walk", "title": "25–30 minute walk", "description": "Do 5 minutes easy, 12–15 minutes brisk, then 5–10 minutes easy.", "detail": "Third focused walk of the week."},
-            {"id": "w2-sat-roller", "category": "roller", "title": "Optional ab roller session", "description": "Only if you feel fresh: 2–3 sets of 6 controlled rollouts.", "detail": "Optional means optional."}
+            {"id": "w2-sat-walk", "category": "walk", "title": "25–30 minute walk", "description": "Do 5 minutes easy, 12–15 minutes brisk, then 5–10 minutes easy.", "detail": "Third focused walk of the week."}
           ]
         },
         {
@@ -152,12 +146,11 @@
       "days": [
         {
           "dayName": "Monday",
-          "title": "Interval walk + roller",
+          "title": "Interval walk",
           "focus": "Session day",
           "tasks": [
             {"id": "w3-mon-steps", "category": "walk", "title": "Hit 7,500–8,000 steps", "description": "Aim for the top end if it feels comfortable.", "detail": "This is your new baseline range."},
-            {"id": "w3-mon-walk", "category": "walk", "title": "30 minute interval walk", "description": "Repeat 5–6 times: 1 minute faster pace, 2 minutes normal pace.", "detail": "Begin and end with a few easy minutes."},
-            {"id": "w3-mon-roller", "category": "roller", "title": "Ab roller session", "description": "3 sets of 8–10 controlled rollouts.", "detail": "Only extend range if you can keep full control."}
+            {"id": "w3-mon-walk", "category": "walk", "title": "30 minute interval walk", "description": "Repeat 5–6 times: 1 minute faster pace, 2 minutes normal pace.", "detail": "Begin and end with a few easy minutes."}
           ]
         },
         {
@@ -179,11 +172,10 @@
         },
         {
           "dayName": "Thursday",
-          "title": "Baseline day + roller",
+          "title": "Baseline day",
           "focus": "Normal walking",
           "tasks": [
-            {"id": "w3-thu-steps", "category": "walk", "title": "Hit 7,500–8,000 steps", "description": "Aim for the top end if it feels comfortable.", "detail": "Keep it routine."},
-            {"id": "w3-thu-roller", "category": "roller", "title": "Ab roller session", "description": "3 sets of 8–10 controlled rollouts.", "detail": "Quality over range."}
+            {"id": "w3-thu-steps", "category": "walk", "title": "Hit 7,500–8,000 steps", "description": "Aim for the top end if it feels comfortable.", "detail": "Keep it routine."}
           ]
         },
         {
@@ -196,12 +188,11 @@
         },
         {
           "dayName": "Saturday",
-          "title": "Interval walk + optional roller",
+          "title": "Interval walk",
           "focus": "Session day",
           "tasks": [
             {"id": "w3-sat-steps", "category": "walk", "title": "Hit 7,500–8,000 steps", "description": "Aim for the top end if it feels comfortable.", "detail": "Outdoors if possible."},
-            {"id": "w3-sat-walk", "category": "walk", "title": "30 minute interval walk", "description": "Repeat 5–6 times: 1 minute faster pace, 2 minutes normal pace.", "detail": "Third interval session of the week."},
-            {"id": "w3-sat-roller", "category": "roller", "title": "Optional ab roller session", "description": "Only if you feel fresh: 2–3 sets of 8 controlled rollouts.", "detail": "Skip if your core feels taxed."}
+            {"id": "w3-sat-walk", "category": "walk", "title": "30 minute interval walk", "description": "Repeat 5–6 times: 1 minute faster pace, 2 minutes normal pace.", "detail": "Third interval session of the week."}
           ]
         },
         {
@@ -223,12 +214,11 @@
       "days": [
         {
           "dayName": "Monday",
-          "title": "Session day + roller",
+          "title": "Session day",
           "focus": "Session day",
           "tasks": [
             {"id": "w4-mon-steps", "category": "walk", "title": "Hit 8,000 steps", "description": "Make 8,000 your comfortable new baseline.", "detail": "A strong but sensible target."},
-            {"id": "w4-mon-walk", "category": "walk", "title": "30 minute session", "description": "Either repeat Week 3 intervals or include 30–60 seconds of very light jogging within the faster parts.", "detail": "Jogging is optional and should feel easy."},
-            {"id": "w4-mon-roller", "category": "roller", "title": "Ab roller session", "description": "3 sets of 10–12 controlled rollouts.", "detail": "Only go as far as you can control."}
+            {"id": "w4-mon-walk", "category": "walk", "title": "30 minute session", "description": "Either repeat Week 3 intervals or include 30–60 seconds of very light jogging within the faster parts.", "detail": "Jogging is optional and should feel easy."}
           ]
         },
         {
@@ -250,11 +240,10 @@
         },
         {
           "dayName": "Thursday",
-          "title": "Baseline day + roller",
+          "title": "Baseline day",
           "focus": "Normal walking",
           "tasks": [
-            {"id": "w4-thu-steps", "category": "walk", "title": "Hit 8,000 steps", "description": "Make 8,000 your comfortable new baseline.", "detail": "A normal active day."},
-            {"id": "w4-thu-roller", "category": "roller", "title": "Ab roller session", "description": "3 sets of 10–12 controlled rollouts.", "detail": "Controlled, never strained."}
+            {"id": "w4-thu-steps", "category": "walk", "title": "Hit 8,000 steps", "description": "Make 8,000 your comfortable new baseline.", "detail": "A normal active day."}
           ]
         },
         {
@@ -267,12 +256,11 @@
         },
         {
           "dayName": "Saturday",
-          "title": "Session day + optional roller",
+          "title": "Session day",
           "focus": "Session day",
           "tasks": [
             {"id": "w4-sat-steps", "category": "walk", "title": "Hit 8,000 steps", "description": "Make 8,000 your comfortable new baseline.", "detail": "A good day for a longer route."},
-            {"id": "w4-sat-walk", "category": "walk", "title": "30 minute session", "description": "Either repeat Week 3 intervals or include 30–60 seconds of very light jogging within the faster parts.", "detail": "Treat any jogging as an experiment, not a commitment."},
-            {"id": "w4-sat-roller", "category": "roller", "title": "Optional ab roller session", "description": "Only if you feel fresh: 2–3 sets of 10 controlled rollouts.", "detail": "Optional means optional."}
+            {"id": "w4-sat-walk", "category": "walk", "title": "30 minute session", "description": "Either repeat Week 3 intervals or include 30–60 seconds of very light jogging within the faster parts.", "detail": "Treat any jogging as an experiment, not a commitment."}
           ]
         },
         {
