@@ -1,70 +1,151 @@
 {
-  "planTitle": "4-week walking plan",
+  "planTitle": "4-week basic strength plan",
   "weeks": [
     {
       "id": "week-1",
       "label": "Week 1",
-      "title": "Turn the dial slightly",
-      "goal": "Move from 5,000 to about 6,000–6,500 steps a day, add a little brisk walking.",
-      "notes": "Use the talk test throughout. Brisk means you can still talk, but you would not want to sing.",
+      "title": "Learn the movements",
+      "goal": "Three short full-body sessions using gentle versions of each exercise. The aim is confidence, not soreness.",
+      "notes": "Use slow, controlled movement. Stop if you feel chest pain, dizziness, unusual breathlessness or sharp joint pain. This is intentionally conservative.",
       "days": [
         {
           "dayName": "Monday",
-          "title": "Focused walking",
-          "focus": "Session day",
+          "title": "Full body A",
+          "focus": "Strength session",
           "tasks": [
-            {"id": "w1-mon-steps", "category": "walk", "title": "Hit 6,000+ steps", "description": "Reach at least 6,000 steps across the day.", "detail": "A gentle lift from your current baseline."},
-            {"id": "w1-mon-walk", "category": "walk", "title": "20–25 minute walk", "description": "Do 5 minutes easy, 10 minutes brisk, then 5–10 minutes easy.", "detail": "Steady, controlled effort."}
+            {
+              "id": "w1-mon-warmup",
+              "category": "mobility",
+              "title": "5-minute warm-up",
+              "description": "March on the spot, shoulder circles, hip circles and gentle bodyweight hinges.",
+              "detail": "Wake the joints up before asking them to work."
+            },
+            {
+              "id": "w1-mon-strength",
+              "category": "strength",
+              "title": "2 rounds: squat, push, hinge, core",
+              "description": "Do 8 chair squats, 6 incline press-ups, 8 glute bridges and a 15-second forearm plank.",
+              "detail": "Rest as needed. Use a table/worktop for incline press-ups."
+            },
+            {
+              "id": "w1-mon-cooldown",
+              "category": "mobility",
+              "title": "3-minute cool-down",
+              "description": "Easy breathing plus gentle chest, hip flexor and hamstring stretches.",
+              "detail": "Leave feeling better than when you started."
+            }
           ]
         },
         {
           "dayName": "Tuesday",
-          "title": "Baseline day",
-          "focus": "Normal walking",
+          "title": "Easy movement",
+          "focus": "Recovery",
           "tasks": [
-            {"id": "w1-tue-steps", "category": "walk", "title": "Hit 6,000+ steps", "description": "Reach at least 6,000 steps across the day.", "detail": "No focused session needed."}
+            {
+              "id": "w1-tue-mobility",
+              "category": "mobility",
+              "title": "10-minute mobility reset",
+              "description": "Cat-cow, child\u2019s pose, thoracic rotations and ankle rocks on the mat.",
+              "detail": "This should feel restorative, not like a workout."
+            }
           ]
         },
         {
           "dayName": "Wednesday",
-          "title": "Focused walking",
-          "focus": "Session day",
+          "title": "Full body B",
+          "focus": "Strength session",
           "tasks": [
-            {"id": "w1-wed-steps", "category": "walk", "title": "Hit 6,000+ steps", "description": "Reach at least 6,000 steps across the day.", "detail": "Keep it comfortably achievable."},
-            {"id": "w1-wed-walk", "category": "walk", "title": "20–25 minute walk", "description": "Do 5 minutes easy, 10 minutes brisk, then 5–10 minutes easy.", "detail": "Relaxed but purposeful."}
+            {
+              "id": "w1-wed-warmup",
+              "category": "mobility",
+              "title": "5-minute warm-up",
+              "description": "March on the spot, arm swings, hip circles and gentle lunges to a comfortable depth.",
+              "detail": "Keep everything easy and controlled."
+            },
+            {
+              "id": "w1-wed-strength",
+              "category": "strength",
+              "title": "2 rounds: legs, shoulders, back, core",
+              "description": "Do 6 reverse lunges per side, 8 wall slides, 10 prone Y-T raises and 6 dead bugs per side.",
+              "detail": "Hold a wall or chair for balance during lunges."
+            },
+            {
+              "id": "w1-wed-cooldown",
+              "category": "mobility",
+              "title": "3-minute cool-down",
+              "description": "Stretch calves, quads, chest and upper back gently.",
+              "detail": "No forcing the stretch."
+            }
           ]
         },
         {
           "dayName": "Thursday",
-          "title": "Baseline day",
-          "focus": "Normal walking",
+          "title": "Easy movement",
+          "focus": "Recovery",
           "tasks": [
-            {"id": "w1-thu-steps", "category": "walk", "title": "Hit 6,000+ steps", "description": "Reach at least 6,000 steps across the day.", "detail": "Split it however you like."}
+            {
+              "id": "w1-thu-mobility",
+              "category": "mobility",
+              "title": "10-minute mobility reset",
+              "description": "Repeat Tuesday\u2019s mobility or choose the tightest areas: hips, back, shoulders and ankles.",
+              "detail": "Consistency beats intensity."
+            }
           ]
         },
         {
           "dayName": "Friday",
-          "title": "Baseline day",
-          "focus": "Normal walking",
+          "title": "Full body A repeat",
+          "focus": "Strength session",
           "tasks": [
-            {"id": "w1-fri-steps", "category": "walk", "title": "Hit 6,000+ steps", "description": "Reach at least 6,000 steps across the day.", "detail": "An ordinary, steady day."}
+            {
+              "id": "w1-fri-warmup",
+              "category": "mobility",
+              "title": "5-minute warm-up",
+              "description": "Repeat Monday\u2019s warm-up.",
+              "detail": "The ritual matters."
+            },
+            {
+              "id": "w1-fri-strength",
+              "category": "strength",
+              "title": "2 rounds: squat, push, hinge, core",
+              "description": "Do 8 chair squats, 6 incline press-ups, 8 glute bridges and a 15-second forearm plank.",
+              "detail": "Try to make the movement smoother than Monday."
+            },
+            {
+              "id": "w1-fri-cooldown",
+              "category": "mobility",
+              "title": "3-minute cool-down",
+              "description": "Easy breathing plus gentle chest, hip flexor and hamstring stretches.",
+              "detail": "Finish calm."
+            }
           ]
         },
         {
           "dayName": "Saturday",
-          "title": "Focused walking",
-          "focus": "Session day",
+          "title": "Optional gentle core",
+          "focus": "Optional",
           "tasks": [
-            {"id": "w1-sat-steps", "category": "walk", "title": "Hit 6,000+ steps", "description": "Reach at least 6,000 steps across the day.", "detail": "Try to do it outdoors if possible."},
-            {"id": "w1-sat-walk", "category": "walk", "title": "20–25 minute walk", "description": "Do 5 minutes easy, 10 minutes brisk, then 5–10 minutes easy.", "detail": "This is your third focused walk of the week."}
+            {
+              "id": "w1-sat-core",
+              "category": "optional",
+              "title": "Optional 8-minute core practice",
+              "description": "Do 2 gentle rounds of 6 dead bugs per side and 15-second side planks from knees per side.",
+              "detail": "Skip this if you feel tired or sore."
+            }
           ]
         },
         {
           "dayName": "Sunday",
-          "title": "Easy day",
+          "title": "Rest day",
           "focus": "Recovery",
           "tasks": [
-            {"id": "w1-sun-steps", "category": "walk", "title": "Hit 6,000+ steps", "description": "Reach at least 6,000 steps across the day.", "detail": "Keep it easy and relaxed."}
+            {
+              "id": "w1-sun-rest",
+              "category": "recovery",
+              "title": "Proper rest",
+              "description": "No strength work today. A walk is fine if you want one.",
+              "detail": "Recovery is part of the plan."
+            }
           ]
         }
       ]
@@ -73,66 +154,147 @@
       "id": "week-2",
       "label": "Week 2",
       "title": "Build consistency",
-      "goal": "Work towards 6,500–7,000 steps a day, extend the brisk sections slightly.",
-      "notes": "Still controlled. The aim is consistency, not heroics.",
+      "goal": "Keep three full-body sessions and add a little volume without making the sessions long.",
+      "notes": "Aim for an effort of about 6\u20137 out of 10. You should finish knowing you worked, but not feeling wrecked.",
       "days": [
         {
           "dayName": "Monday",
-          "title": "Focused walking",
-          "focus": "Session day",
+          "title": "Full body A",
+          "focus": "Strength session",
           "tasks": [
-            {"id": "w2-mon-steps", "category": "walk", "title": "Hit 7,000 steps", "description": "Aim for about 7,000 steps today.", "detail": "A little more volume, still manageable."},
-            {"id": "w2-mon-walk", "category": "walk", "title": "25–30 minute walk", "description": "Do 5 minutes easy, 12–15 minutes brisk, then 5–10 minutes easy.", "detail": "Build the middle section gently."}
+            {
+              "id": "w2-mon-warmup",
+              "category": "mobility",
+              "title": "5-minute warm-up",
+              "description": "March on the spot, shoulder circles, hip circles and gentle bodyweight hinges.",
+              "detail": "Same warm-up, slightly more confidence."
+            },
+            {
+              "id": "w2-mon-strength",
+              "category": "strength",
+              "title": "3 rounds: squat, push, hinge, core",
+              "description": "Do 8 chair squats, 7 incline press-ups, 10 glute bridges and a 20-second forearm plank.",
+              "detail": "Add the third round only if form stays tidy."
+            },
+            {
+              "id": "w2-mon-cooldown",
+              "category": "mobility",
+              "title": "3-minute cool-down",
+              "description": "Easy breathing plus gentle chest, hip flexor and hamstring stretches.",
+              "detail": "Don\u2019t skip it."
+            }
           ]
         },
         {
           "dayName": "Tuesday",
-          "title": "Baseline day",
-          "focus": "Normal walking",
+          "title": "Mobility and balance",
+          "focus": "Recovery",
           "tasks": [
-            {"id": "w2-tue-steps", "category": "walk", "title": "Hit 7,000 steps", "description": "Aim for about 7,000 steps today.", "detail": "Spread them through the day."}
+            {
+              "id": "w2-tue-mobility",
+              "category": "mobility",
+              "title": "10-minute mobility and balance",
+              "description": "Do cat-cow, thoracic rotations, ankle rocks and 3 x 20-second single-leg stands per side.",
+              "detail": "Use a wall or worktop for balance."
+            }
           ]
         },
         {
           "dayName": "Wednesday",
-          "title": "Focused walking",
-          "focus": "Session day",
+          "title": "Full body B",
+          "focus": "Strength session",
           "tasks": [
-            {"id": "w2-wed-steps", "category": "walk", "title": "Hit 7,000 steps", "description": "Aim for about 7,000 steps today.", "detail": "An ordinary day with one focused session."},
-            {"id": "w2-wed-walk", "category": "walk", "title": "25–30 minute walk", "description": "Do 5 minutes easy, 12–15 minutes brisk, then 5–10 minutes easy.", "detail": "Keep your pace even."}
+            {
+              "id": "w2-wed-warmup",
+              "category": "mobility",
+              "title": "5-minute warm-up",
+              "description": "March on the spot, arm swings, hip circles and gentle lunges.",
+              "detail": "Warm, not sweaty."
+            },
+            {
+              "id": "w2-wed-strength",
+              "category": "strength",
+              "title": "3 rounds: legs, shoulders, back, core",
+              "description": "Do 7 reverse lunges per side, 10 wall slides, 10 prone Y-T raises and 7 dead bugs per side.",
+              "detail": "Controlled range beats depth."
+            },
+            {
+              "id": "w2-wed-cooldown",
+              "category": "mobility",
+              "title": "3-minute cool-down",
+              "description": "Stretch calves, quads, chest and upper back gently.",
+              "detail": "Easy breathing throughout."
+            }
           ]
         },
         {
           "dayName": "Thursday",
-          "title": "Baseline day",
-          "focus": "Normal walking",
+          "title": "Easy movement",
+          "focus": "Recovery",
           "tasks": [
-            {"id": "w2-thu-steps", "category": "walk", "title": "Hit 7,000 steps", "description": "Aim for about 7,000 steps today.", "detail": "No special route needed."}
+            {
+              "id": "w2-thu-mobility",
+              "category": "mobility",
+              "title": "10-minute mobility reset",
+              "description": "Repeat your favourite mobility moves from Tuesday.",
+              "detail": "Keep the habit alive."
+            }
           ]
         },
         {
           "dayName": "Friday",
-          "title": "Baseline day",
-          "focus": "Normal walking",
+          "title": "Full body A repeat",
+          "focus": "Strength session",
           "tasks": [
-            {"id": "w2-fri-steps", "category": "walk", "title": "Hit 7,000 steps", "description": "Aim for about 7,000 steps today.", "detail": "Stay comfortably active."}
+            {
+              "id": "w2-fri-warmup",
+              "category": "mobility",
+              "title": "5-minute warm-up",
+              "description": "Repeat Monday\u2019s warm-up.",
+              "detail": "Notice what already feels easier."
+            },
+            {
+              "id": "w2-fri-strength",
+              "category": "strength",
+              "title": "3 rounds: squat, push, hinge, core",
+              "description": "Do 8 chair squats, 7 incline press-ups, 10 glute bridges and a 20-second forearm plank.",
+              "detail": "Rest longer rather than rushing."
+            },
+            {
+              "id": "w2-fri-cooldown",
+              "category": "mobility",
+              "title": "3-minute cool-down",
+              "description": "Easy breathing plus gentle chest, hip flexor and hamstring stretches.",
+              "detail": "Finish relaxed."
+            }
           ]
         },
         {
           "dayName": "Saturday",
-          "title": "Focused walking",
-          "focus": "Session day",
+          "title": "Optional legs and core",
+          "focus": "Optional",
           "tasks": [
-            {"id": "w2-sat-steps", "category": "walk", "title": "Hit 7,000 steps", "description": "Aim for about 7,000 steps today.", "detail": "A good day for a longer route."},
-            {"id": "w2-sat-walk", "category": "walk", "title": "25–30 minute walk", "description": "Do 5 minutes easy, 12–15 minutes brisk, then 5–10 minutes easy.", "detail": "Third focused walk of the week."}
+            {
+              "id": "w2-sat-core",
+              "category": "optional",
+              "title": "Optional 10-minute practice",
+              "description": "Do 2 rounds of 8 glute bridges, 6 dead bugs per side and 15-second side planks from knees per side.",
+              "detail": "Optional means optional."
+            }
           ]
         },
         {
           "dayName": "Sunday",
-          "title": "Easy day",
+          "title": "Rest day",
           "focus": "Recovery",
           "tasks": [
-            {"id": "w2-sun-steps", "category": "walk", "title": "Hit 7,000 steps", "description": "Aim for about 7,000 steps today.", "detail": "A steady recovery day."}
+            {
+              "id": "w2-sun-rest",
+              "category": "recovery",
+              "title": "Proper rest",
+              "description": "No strength work today. Light walking or stretching is fine.",
+              "detail": "Let the work settle in."
+            }
           ]
         }
       ]
@@ -140,67 +302,148 @@
     {
       "id": "week-3",
       "label": "Week 3",
-      "title": "Introduce intervals",
-      "goal": "Lift daily steps to about 7,500–8,000 and use short faster intervals to prepare for possible jogging later.",
-      "notes": "Faster means brisk, not running. You should still feel in control throughout.",
+      "title": "Make it feel like training",
+      "goal": "Move from learning the exercises to slightly more deliberate strength work.",
+      "notes": "You can progress by adding reps, using a slower tempo, or making the angle harder. Do not change everything at once.",
       "days": [
         {
           "dayName": "Monday",
-          "title": "Interval walk",
-          "focus": "Session day",
+          "title": "Full body A",
+          "focus": "Strength session",
           "tasks": [
-            {"id": "w3-mon-steps", "category": "walk", "title": "Hit 7,500–8,000 steps", "description": "Aim for the top end if it feels comfortable.", "detail": "This is your new baseline range."},
-            {"id": "w3-mon-walk", "category": "walk", "title": "30 minute interval walk", "description": "Repeat 5–6 times: 1 minute faster pace, 2 minutes normal pace.", "detail": "Begin and end with a few easy minutes."}
+            {
+              "id": "w3-mon-warmup",
+              "category": "mobility",
+              "title": "5-minute warm-up",
+              "description": "March on the spot, shoulder circles, hip circles and slow hinges.",
+              "detail": "Prepare for slower, more deliberate reps."
+            },
+            {
+              "id": "w3-mon-strength",
+              "category": "strength",
+              "title": "3 rounds: controlled strength",
+              "description": "Do 10 chair squats, 8 incline press-ups, 12 glute bridges and a 25-second forearm plank.",
+              "detail": "Use a 3-second lowering phase on squats and press-ups."
+            },
+            {
+              "id": "w3-mon-cooldown",
+              "category": "mobility",
+              "title": "3-minute cool-down",
+              "description": "Stretch hips, chest, hamstrings and calves.",
+              "detail": "Keep it gentle."
+            }
           ]
         },
         {
           "dayName": "Tuesday",
-          "title": "Baseline day",
-          "focus": "Normal walking",
+          "title": "Mobility and balance",
+          "focus": "Recovery",
           "tasks": [
-            {"id": "w3-tue-steps", "category": "walk", "title": "Hit 7,500–8,000 steps", "description": "Aim for the top end if it feels comfortable.", "detail": "No extra session needed."}
+            {
+              "id": "w3-tue-mobility",
+              "category": "mobility",
+              "title": "12-minute mobility and balance",
+              "description": "Do cat-cow, thoracic rotations, ankle rocks and 3 x 25-second single-leg stands per side.",
+              "detail": "Good balance is useful strength."
+            }
           ]
         },
         {
           "dayName": "Wednesday",
-          "title": "Interval walk",
-          "focus": "Session day",
+          "title": "Full body B",
+          "focus": "Strength session",
           "tasks": [
-            {"id": "w3-wed-steps", "category": "walk", "title": "Hit 7,500–8,000 steps", "description": "Aim for the top end if it feels comfortable.", "detail": "Consistency matters more than pace."},
-            {"id": "w3-wed-walk", "category": "walk", "title": "30 minute interval walk", "description": "Repeat 5–6 times: 1 minute faster pace, 2 minutes normal pace.", "detail": "Brisk for the fast minutes, not breathless."}
+            {
+              "id": "w3-wed-warmup",
+              "category": "mobility",
+              "title": "5-minute warm-up",
+              "description": "March on the spot, arm swings, hip circles and gentle lunges.",
+              "detail": "Make the first round easier if needed."
+            },
+            {
+              "id": "w3-wed-strength",
+              "category": "strength",
+              "title": "3 rounds: legs, shoulders, back, core",
+              "description": "Do 8 reverse lunges per side, 10 wall slides, 12 prone Y-T raises and 8 dead bugs per side.",
+              "detail": "Slow down the dead bugs: control matters."
+            },
+            {
+              "id": "w3-wed-cooldown",
+              "category": "mobility",
+              "title": "3-minute cool-down",
+              "description": "Stretch calves, quads, chest and upper back gently.",
+              "detail": "This is the reset button."
+            }
           ]
         },
         {
           "dayName": "Thursday",
-          "title": "Baseline day",
-          "focus": "Normal walking",
+          "title": "Easy movement",
+          "focus": "Recovery",
           "tasks": [
-            {"id": "w3-thu-steps", "category": "walk", "title": "Hit 7,500–8,000 steps", "description": "Aim for the top end if it feels comfortable.", "detail": "Keep it routine."}
+            {
+              "id": "w3-thu-mobility",
+              "category": "mobility",
+              "title": "10-minute mobility reset",
+              "description": "Repeat the hips, back and shoulders sequence.",
+              "detail": "No strength test today."
+            }
           ]
         },
         {
           "dayName": "Friday",
-          "title": "Baseline day",
-          "focus": "Normal walking",
+          "title": "Full body C",
+          "focus": "Strength session",
           "tasks": [
-            {"id": "w3-fri-steps", "category": "walk", "title": "Hit 7,500–8,000 steps", "description": "Aim for the top end if it feels comfortable.", "detail": "A normal active day."}
+            {
+              "id": "w3-fri-warmup",
+              "category": "mobility",
+              "title": "5-minute warm-up",
+              "description": "March on the spot, shoulder circles, hip circles and slow hinges.",
+              "detail": "Keep breathing steady."
+            },
+            {
+              "id": "w3-fri-strength",
+              "category": "strength",
+              "title": "3 rounds: mixed strength",
+              "description": "Do 8 sit-to-stands without using hands, 8 incline press-ups, 8 bird dogs per side and 20-second side planks from knees per side.",
+              "detail": "This session adds anti-rotation core work."
+            },
+            {
+              "id": "w3-fri-cooldown",
+              "category": "mobility",
+              "title": "3-minute cool-down",
+              "description": "Easy breathing plus gentle stretches for anything that worked hard.",
+              "detail": "Don\u2019t chase soreness."
+            }
           ]
         },
         {
           "dayName": "Saturday",
-          "title": "Interval walk",
-          "focus": "Session day",
+          "title": "Optional core and posture",
+          "focus": "Optional",
           "tasks": [
-            {"id": "w3-sat-steps", "category": "walk", "title": "Hit 7,500–8,000 steps", "description": "Aim for the top end if it feels comfortable.", "detail": "Outdoors if possible."},
-            {"id": "w3-sat-walk", "category": "walk", "title": "30 minute interval walk", "description": "Repeat 5–6 times: 1 minute faster pace, 2 minutes normal pace.", "detail": "Third interval session of the week."}
+            {
+              "id": "w3-sat-core",
+              "category": "optional",
+              "title": "Optional 10-minute posture/core practice",
+              "description": "Do 2 rounds of 10 prone Y-T raises, 8 dead bugs per side and 20-second side planks from knees per side.",
+              "detail": "Useful, but still optional."
+            }
           ]
         },
         {
           "dayName": "Sunday",
-          "title": "Easy day",
+          "title": "Rest day",
           "focus": "Recovery",
           "tasks": [
-            {"id": "w3-sun-steps", "category": "walk", "title": "Hit 7,500–8,000 steps", "description": "Aim for the top end if it feels comfortable.", "detail": "Keep the pace easy today."}
+            {
+              "id": "w3-sun-rest",
+              "category": "recovery",
+              "title": "Proper rest",
+              "description": "No strength work today. Take notes on what feels easier than Week 1.",
+              "detail": "Progress is not always dramatic."
+            }
           ]
         }
       ]
@@ -208,67 +451,148 @@
     {
       "id": "week-4",
       "label": "Week 4",
-      "title": "Confidence and optional progression",
-      "goal": "Make 8,000 steps feel normal, continue interval walking, and optionally test tiny jogging intervals if everything feels easy and controlled.",
-      "notes": "Jogging is optional. Staying with walking intervals for another week is a perfectly good outcome.",
+      "title": "Consolidate and choose the next step",
+      "goal": "Keep the routine manageable while testing which exercises are ready for a slightly harder variation.",
+      "notes": "This is not a punishment week. It is a confidence week. Finish wanting to continue.",
       "days": [
         {
           "dayName": "Monday",
-          "title": "Session day",
-          "focus": "Session day",
+          "title": "Full body A",
+          "focus": "Strength session",
           "tasks": [
-            {"id": "w4-mon-steps", "category": "walk", "title": "Hit 8,000 steps", "description": "Make 8,000 your comfortable new baseline.", "detail": "A strong but sensible target."},
-            {"id": "w4-mon-walk", "category": "walk", "title": "30 minute session", "description": "Either repeat Week 3 intervals or include 30–60 seconds of very light jogging within the faster parts.", "detail": "Jogging is optional and should feel easy."}
+            {
+              "id": "w4-mon-warmup",
+              "category": "mobility",
+              "title": "5-minute warm-up",
+              "description": "March on the spot, shoulder circles, hip circles and slow hinges.",
+              "detail": "Same warm-up, better body awareness."
+            },
+            {
+              "id": "w4-mon-strength",
+              "category": "strength",
+              "title": "3 rounds: controlled strength",
+              "description": "Do 10\u201312 chair squats, 8\u201310 incline press-ups, 12 glute bridges and a 30-second forearm plank.",
+              "detail": "Choose the lower number if form fades."
+            },
+            {
+              "id": "w4-mon-cooldown",
+              "category": "mobility",
+              "title": "3-minute cool-down",
+              "description": "Stretch hips, chest, hamstrings and calves.",
+              "detail": "End calm and loose."
+            }
           ]
         },
         {
           "dayName": "Tuesday",
-          "title": "Baseline day",
-          "focus": "Normal walking",
+          "title": "Mobility and balance",
+          "focus": "Recovery",
           "tasks": [
-            {"id": "w4-tue-steps", "category": "walk", "title": "Hit 8,000 steps", "description": "Make 8,000 your comfortable new baseline.", "detail": "No extra session needed."}
+            {
+              "id": "w4-tue-mobility",
+              "category": "mobility",
+              "title": "12-minute mobility and balance",
+              "description": "Do cat-cow, thoracic rotations, ankle rocks and 3 x 30-second single-leg stands per side.",
+              "detail": "This is quiet but valuable work."
+            }
           ]
         },
         {
           "dayName": "Wednesday",
-          "title": "Session day",
-          "focus": "Session day",
+          "title": "Full body B",
+          "focus": "Strength session",
           "tasks": [
-            {"id": "w4-wed-steps", "category": "walk", "title": "Hit 8,000 steps", "description": "Make 8,000 your comfortable new baseline.", "detail": "Keep it steady and repeatable."},
-            {"id": "w4-wed-walk", "category": "walk", "title": "30 minute session", "description": "Either repeat Week 3 intervals or include 30–60 seconds of very light jogging within the faster parts.", "detail": "No pressure to jog if walking still feels better."}
+            {
+              "id": "w4-wed-warmup",
+              "category": "mobility",
+              "title": "5-minute warm-up",
+              "description": "March on the spot, arm swings, hip circles and gentle lunges.",
+              "detail": "Stay controlled."
+            },
+            {
+              "id": "w4-wed-strength",
+              "category": "strength",
+              "title": "3 rounds: legs, shoulders, back, core",
+              "description": "Do 8\u201310 reverse lunges per side, 10 wall slides, 12 prone Y-T raises and 8\u201310 dead bugs per side.",
+              "detail": "Only increase reps if everything feels solid."
+            },
+            {
+              "id": "w4-wed-cooldown",
+              "category": "mobility",
+              "title": "3-minute cool-down",
+              "description": "Stretch calves, quads, chest and upper back gently.",
+              "detail": "No forcing."
+            }
           ]
         },
         {
           "dayName": "Thursday",
-          "title": "Baseline day",
-          "focus": "Normal walking",
+          "title": "Easy movement",
+          "focus": "Recovery",
           "tasks": [
-            {"id": "w4-thu-steps", "category": "walk", "title": "Hit 8,000 steps", "description": "Make 8,000 your comfortable new baseline.", "detail": "A normal active day."}
+            {
+              "id": "w4-thu-mobility",
+              "category": "mobility",
+              "title": "10-minute mobility reset",
+              "description": "Repeat whichever mobility sequence has helped most this month.",
+              "detail": "You are building a reusable routine."
+            }
           ]
         },
         {
           "dayName": "Friday",
-          "title": "Baseline day",
-          "focus": "Normal walking",
+          "title": "Full body test-not-test",
+          "focus": "Strength session",
           "tasks": [
-            {"id": "w4-fri-steps", "category": "walk", "title": "Hit 8,000 steps", "description": "Make 8,000 your comfortable new baseline.", "detail": "Routine and consistent."}
+            {
+              "id": "w4-fri-warmup",
+              "category": "mobility",
+              "title": "5-minute warm-up",
+              "description": "March on the spot, shoulder circles, hip circles and slow hinges.",
+              "detail": "No rushing into the final session."
+            },
+            {
+              "id": "w4-fri-strength",
+              "category": "strength",
+              "title": "3 rounds: pick one progression",
+              "description": "Do 10 sit-to-stands, 8 incline press-ups, 10 bird dogs per side and 25-second side planks from knees per side.",
+              "detail": "Optional progression: lower the press-up incline slightly, or add 2 reps. Not both."
+            },
+            {
+              "id": "w4-fri-review",
+              "category": "review",
+              "title": "2-minute review",
+              "description": "Write down the easiest exercise, the hardest exercise and one thing to continue next month.",
+              "detail": "This turns the plan into useful feedback."
+            }
           ]
         },
         {
           "dayName": "Saturday",
-          "title": "Session day",
-          "focus": "Session day",
+          "title": "Optional confidence session",
+          "focus": "Optional",
           "tasks": [
-            {"id": "w4-sat-steps", "category": "walk", "title": "Hit 8,000 steps", "description": "Make 8,000 your comfortable new baseline.", "detail": "A good day for a longer route."},
-            {"id": "w4-sat-walk", "category": "walk", "title": "30 minute session", "description": "Either repeat Week 3 intervals or include 30–60 seconds of very light jogging within the faster parts.", "detail": "Treat any jogging as an experiment, not a commitment."}
+            {
+              "id": "w4-sat-core",
+              "category": "optional",
+              "title": "Optional 10-minute favourite moves",
+              "description": "Pick three exercises from the plan and do two easy rounds.",
+              "detail": "Choose confidence, not punishment."
+            }
           ]
         },
         {
           "dayName": "Sunday",
-          "title": "Easy day",
+          "title": "Rest and next step",
           "focus": "Recovery",
           "tasks": [
-            {"id": "w4-sun-steps", "category": "walk", "title": "Hit 8,000 steps", "description": "Make 8,000 your comfortable new baseline.", "detail": "Keep the pace relaxed."}
+            {
+              "id": "w4-sun-rest",
+              "category": "recovery",
+              "title": "Finish the plan",
+              "description": "Rest today and decide whether to repeat the plan, make it harder, or add light equipment.",
+              "detail": "A resistance band would be the first useful purchase if you want more pulling work."
+            }
           ]
         }
       ]
